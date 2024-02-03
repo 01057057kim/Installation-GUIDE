@@ -1,17 +1,15 @@
 -Tailwind css In Vue (Visual Studio Code)
 
-npm create vue@latest
 ```sh
+npm create vue@latest
 cd vue-project
 npm install
-```
-
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 npx tailwindcss init
+```
 
 $ tailwind.config.js in vue-project
-{
-
+```sh
 /** @type {import('tailwindcss').Config} */
 export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -21,41 +19,40 @@ export default {
   },
   plugins: [],
 }
+```
 
-}
-
-$ make new file postcss.config.js inside same folder with tailwind.config.js
-{
-
+$ Make new file postcss.config.js inside same folder with tailwind.config.js
+```sh
 export default {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   }
-  
-}
+```
 
-Make tailwind.css inside src
-{
-
+$ Make tailwind.css inside src
+```sh
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
 
-}
-
-go to main.js
-{
+$ go to main.js
+```sh
 import './tailwind.css'
-}
+```
 
+$ to run the website
+```sh
 npm run dev
+```
+
 #####################################################################
-Git Bash
+-Git Bash
 
-cd to folder to upload
-
+cd to the folder to upload
+```sh
 git init
 git add .
 git commit -m "first commit"
@@ -70,35 +67,42 @@ git commit -m "adding dist"
 git subtree push --prefix dist origin gh-pages
 
 got to github main -> Branches -> gh-pages
+```
 
 #####################################################################
-
 -Tailwind Install in HTML
 
+```sh
 npm install -D tailwindcss
 npx tailwindcss init
+```
+$ Inside tailwind.config.js
+```sh
 content: ["./index.html"],
-new file in folder src -> input.css 
-{
+```
+# add new file in folder src -> input.css 
+```sh
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-}
-
+```
+```sh
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-
-<in HTML>
+```
+$ in HTML
+```sh
 <link href="./src/output.css" rel="stylesheet">
-
+```
 #####################################################################
 -Git Terminal VSC
-
+```sh
 git init 
 git add origin
 git remote add origin https:/github.com/.....
 git add -A
 git commit -m "Initial commit"
 git push origin master
+```
 
 #####################################################################
 
