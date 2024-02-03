@@ -1,10 +1,10 @@
 -Tailwind css In Vue (Visual Studio Code)
 
 npm create vue@latest
-{
+```sh
 cd vue-project
 npm install
-}
+```
 
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 npx tailwindcss init
