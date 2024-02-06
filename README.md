@@ -79,7 +79,7 @@ npm run dev
 #####################################################################
 - Git Bash
 
-cd to the folder to upload
+$ cd to the folder to upload
 ```sh
 git init
 git add .
@@ -87,8 +87,10 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/..../....
 git push -u origin main
-					<!--'/Product-preview/' -->
-got to vite.config.js in folder add {base: '/<REPO NAME>/',} 
+```
+```sh
+				<!--'/Product-preview/' -->
+$ got to vite.config.js in folder add {base: '/<REPO NAME>/',} 
 npm run build 
 git add dist -f
 git commit -m "adding dist"
