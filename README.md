@@ -1,4 +1,4 @@
--Tailwind css In Vue (Visual Studio Code)
+- Tailwind css In Vue (Visual Studio Code)
 
 ```sh
 npm create vue@latest
@@ -77,7 +77,7 @@ npm run dev
 ```
 
 #####################################################################
--Git Bash
+- Git Bash
 
 cd to the folder to upload
 ```sh
@@ -98,7 +98,7 @@ got to github main -> Branches -> gh-pages
 ```
 
 #####################################################################
--Tailwind Install in HTML
+- Tailwind Install in HTML
 
 ```sh
 npm install -D tailwindcss
@@ -122,7 +122,7 @@ $ in HTML
 <link href="./src/output.css" rel="stylesheet">
 ```
 #####################################################################
--Git Terminal VSC
+- Git Terminal VSC
 ```sh
 git init 
 git add origin
